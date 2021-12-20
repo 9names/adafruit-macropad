@@ -53,10 +53,6 @@ If you get an error about not being able to find `elf2uf2-rs`, try:
 $ cargo install elf2uf2-rs, then repeating the `cargo run` command above.
 ```
 
-### [feather_blinky](./examples/feather_blinky.rs)
-
-Flashes the Feather's on-board LED on and off.
-
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to
