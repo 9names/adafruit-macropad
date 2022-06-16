@@ -6,7 +6,7 @@ an [Adafruit Macropad] - a 3x4 keyboard and OLED combo board from Adafruit.
 This crate includes the [rp2040-hal], but also configures each pin of the
 RP2040 chip according to how it is connected up on the Feather.
 
-[adafruit-macropad]: https://github.com/rp-rs/rp-hal/tree/main/boards/adafruit-macropad
+[adafruit-macropad]: https://github.com/rp-rs/adafruit-macropad
 [Adafruit Macropad]: https://www.adafruit.com/product/5128
 [rp2040-hal]: https://github.com/rp-rs/rp-hal/tree/main/rp2040-hal
 [Raspberry Silicon RP2040]: https://www.raspberrypi.org/products/rp2040/
@@ -16,7 +16,7 @@ RP2040 chip according to how it is connected up on the Feather.
 To use this crate, your `Cargo.toml` file should contain:
 
 ```toml
-adafruit-macropad = "0.2.0"
+adafruit-macropad = "0.3.0"
 ```
 
 In your program, you will need to call `adafruit_macropad::Pins::new` to create
@@ -30,7 +30,7 @@ devices. See the [examples](./examples) folder for more details.
 To compile an example, clone the _rp-hal_ repository and run:
 
 ```console
-rp-hal/boards/adafruit-macropad $ cargo build --release --example <name>
+adafruit-macropad $ cargo build --release --example <name>
 ```
 
 You will get an ELF file called
@@ -44,7 +44,7 @@ USB drive exported by the RP2040 bootloader, simply boot your board into
 bootloader mode and run:
 
 ```console
-rp-hal/boards/adafruit-macropad $ cargo run --release --example <name>
+adafruit-macropad $ cargo run --release --example <name>
 ```
 
 If you get an error about not being able to find `elf2uf2-rs`, try:
